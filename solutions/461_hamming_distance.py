@@ -1,4 +1,4 @@
-class solution:
+class Solution:
     def hammingDistance(self, x, y):
         ans = 0
         for i in range(32):
