@@ -24,10 +24,13 @@ node addNode(node head, int value)
     // add element's value to data part of node
     temp->data = value;
     // when linked list is empty
-    if(head == NULL){
+    if(head == NULL)
+    {
+        printf("Creating head!\n");
         head = temp;
     }
-    else{
+    else
+    {
         // assign head to p
         p  = head;
         while(p->next != NULL)
@@ -37,6 +40,7 @@ node addNode(node head, int value)
             p = p->next;
         }
         // point the previous last node to the new node created
+        printf("Adding to head!\n");
         p->next = temp;
     }
     return head;
