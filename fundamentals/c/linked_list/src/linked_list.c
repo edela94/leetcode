@@ -42,14 +42,16 @@ node addNode(node head, int value)
     return head;
 }
 
-// int printNodes(node head)
-// {
-//     node n;
-//     n = head;
-//     while (n->next != NULL)
-//     {
-//         printf("%d\n", n->data);
-//         n = n->next;
-//     }
-//     return 0;
-// }
+int printNodes(node head)
+{
+    node n;
+    n = head;
+    int count = 0;
+    while (n != NULL)
+    {
+        printf("Node: %d Value: %d\n", count, n->data);
+        n = n->next;
+        count++;
+    }
+    return count++;
+}

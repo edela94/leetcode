@@ -18,12 +18,9 @@ void test_func_NeedToImplement(void)
     node node2;
     int ans;
 
-    head->data = 6;
-    head->next = node1;
-    node1->data = 7;
-    node1->next = node2;
-    node2->data = 9;
-    // ans = printNodes(head);
+    addNode(head, 6);
+    addNode(head, 7);
+    addNode(head, 9);
 
-    TEST_ASSERT_EQUAL_INT(0, 0);
+    TEST_ASSERT_EQUAL_INT(0, printNodes(head));
 }

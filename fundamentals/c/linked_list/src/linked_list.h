@@ -10,6 +10,6 @@ typedef struct Node* node;
 
 node createNode();
 node addNode(node head, int value);
-// int printNodes(node head);
+int printNodes(node head);
 
 #endif // _LINKED_LIST_H
