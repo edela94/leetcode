@@ -10,7 +10,6 @@ void quick_sort(uint32_t* buffer, uint32_t len);
 void heap_sort(uint32_t* buffer, uint32_t len);
 void counting_sort(uint32_t* buffer, uint32_t len);
 
-// TODO: declare swap as static after verifying
-void swap(uint32_t* a, uint32_t* b);
+void print_array(uint32_t* buffer, uint32_t len);
 
 #endif // _LINKED_LIST_H
